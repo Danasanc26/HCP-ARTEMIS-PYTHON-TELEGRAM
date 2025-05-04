@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from datetime import datetime
 import json
 import os
+import time
 
 app = Flask(__name__)
 LOG_FILE = "eventos_recibidos.json"
@@ -42,7 +43,7 @@ def recibir_evento():
     except Exception as e:
         print("❌ Error al procesar evento:", str(e))
         return jsonify({"status": "error", "message": str(e)}), 500
-
+    
 # Guardar evento en archivo JSON
 def guardar_evento(evento):
     try:
@@ -60,3 +61,4 @@ def guardar_evento(evento):
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
