@@ -1,0 +1,25 @@
+[
+  {
+    "timestamp": "2025-05-04T18:09:45.547454",
+    "contenido": {
+      "method": "OnEventNotify",
+      "params": {
+        "sendTime": "2025-05-04T18:09:45-05:00",
+        "ability": "event_vss",
+        "events": [
+          {
+            "eventId": "FF467A16B67A426C97AE7498293A5FBD",
+            "srcIndex": "23",
+            "srcType": "camera",
+            "srcName": "Camera 01",
+            "eventType": 131331,
+            "status": 1,
+            "eventLvl": 3,
+            "happenTime": "2025-05-05T07:09:45+08:00"
+          }
+        ]
+      },
+      "isHistory": 0
+    }
+  }
+]
