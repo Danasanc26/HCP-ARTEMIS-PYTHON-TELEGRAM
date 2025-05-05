@@ -4,6 +4,7 @@ import json
 import os
 import time
 
+
 app = Flask(__name__)
 LOG_FILE = "eventos_recibidos.json"
 
